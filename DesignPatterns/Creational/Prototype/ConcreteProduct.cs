@@ -2,31 +2,34 @@
 
 namespace DesignPatterns.Creational.Prototype
 {
-    public class ConcretePrototype1 : IPrototype
+    public class ConcreteProduct : IPrototype<ConcreteProduct>
     {
-        public ConcretePrototype1()
+        public ConcreteProduct()
         {
             Data1 = 1;
             Data2 = "bla";
             Data3 = 100000000000;
             Console.WriteLine("Expensive object creation");
+            Prototype = this;
         }
 
-        private int Data1 { get; }
-        private string Data2 { get; }
-        private long Data3 { get; }
+        public int Data1 { get; set; }
+        public string Data2 { get; set; }
+        public long Data3 { get; set; }
 
-        public void DoSomething()
-        {
-            Console.WriteLine("Doing something");
-        }
+        public static ConcreteProduct Prototype { get; set; }
 
-        public IPrototype Clone()
+        public ConcreteProduct Clone()
         {
             Console.WriteLine("Cheaper object cloning");
             // This is a shallow copy. Only value types. References will point ot same objects!!!
             // https://docs.microsoft.com/en-us/dotnet/api/system.object.memberwiseclone?view=netcore-3.1
-            return (ConcretePrototype1)MemberwiseClone();
+            return (ConcreteProduct) MemberwiseClone();
+        }
+
+        public void DoSomething()
+        {
+            Console.WriteLine("Doing something");
         }
     }
 }

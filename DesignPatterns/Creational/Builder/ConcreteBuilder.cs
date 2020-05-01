@@ -2,20 +2,16 @@ namespace DesignPatterns.Creational.Builder
 {
     public class ConcreteBuilder : IBuilder
     {
-        private readonly ComplexProduct _result = new ComplexProduct();
-        private PartA PartA => default;
-        private PartB PartB => default;
-
-        public ComplexProduct Result => _result;
+        public ComplexProduct Result { get; } = new ComplexProduct();
 
         public void BuildPartA()
         {
-            _result.PartA = new PartA();
+            Result.PartA = new PartA();
         }
 
         public void BuildPartB()
         {
-            _result.PartB = new PartB();
+            Result.PartB = new PartB();
         }
     }
 }

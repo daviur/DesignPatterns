@@ -1,15 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DesignPatterns.Creational.FactoryMethod.ConcreteCreator2" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8.5" Y="3" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>EAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Creational\FactoryMethod\ConcreteCreator2.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Class Name="DesignPatterns.Creational.FactoryMethod.ConcreteProduct1" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="2.5" Y="2.75" Width="1.5" />
+    <Position X="8.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Creational\FactoryMethod\ConcreteProduct1.cs</FileName>
@@ -17,34 +9,55 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DesignPatterns.Creational.SimpleFactory.ConcreteProduct2" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="4.25" Y="2.75" Width="1.5" />
+    <Position X="10.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Creational\SimpleFactory\ConcreteProduct2.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="DesignPatterns.Creational.FactoryMethod.ConcreteCreator1" Collapsed="true">
-    <Position X="6.5" Y="3" Width="1.5" />
+  <Class Name="DesignPatterns.Creational.FactoryMethod.Application">
+    <Position X="5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Creational\FactoryMethod\ConcreteCreator1.cs</FileName>
+      <HashCode>AAgAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Creational\FactoryMethod\Application.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <ShowAsAssociation>
+      <Property Name="IProduct" />
+    </ShowAsAssociation>
   </Class>
-  <Interface Name="DesignPatterns.Creational.FactoryMethod.ICreator">
-    <Position X="7.5" Y="1.25" Width="1.75" />
+  <Class Name="DesignPatterns.Creational.FactoryMethod.ApplicationType1">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <AssociationLine Name="ConcreteProduct1" Type="DesignPatterns.Creational.FactoryMethod.ConcreteProduct1" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="4.483" />
+        <Point X="4.5" Y="5.312" />
+        <Point X="8.25" Y="5.312" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>EAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Creational\FactoryMethod\ICreator.cs</FileName>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\ApplicationType1.cs</FileName>
     </TypeIdentifier>
-  </Interface>
-  <Interface Name="DesignPatterns.Creational.SimpleFactory.IProduct" Collapsed="true">
-    <Position X="3.5" Y="1.5" Width="1.5" />
+    <ShowAsAssociation>
+      <Property Name="ConcreteProduct1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPatterns.Creational.FactoryMethod.ApplicationType2" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\ApplicationType2.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConcreteProduct2" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="DesignPatterns.Creational.FactoryMethod.IProduct" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Creational\SimpleFactory\IProduct.cs</FileName>
-      <NewMemberFileName>Creational\FactoryMethod\IProduct.cs</NewMemberFileName>
+      <FileName>Creational\FactoryMethod\IProduct.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

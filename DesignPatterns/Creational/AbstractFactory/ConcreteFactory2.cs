@@ -1,3 +1,5 @@
+using System;
+
 namespace DesignPatterns.Creational.AbstractFactory
 {
     public class ConcreteFactory2 : AbstractFactory
@@ -11,19 +13,32 @@ namespace DesignPatterns.Creational.AbstractFactory
         private ConcreteProductB2 ConcreteProductB2
         {
             get => default;
-            set
-            {
-            }
+            set { }
         }
 
-        public override AbstractProductA GetProductA()
+        public override AbstractProductA MakeProductA()
         {
             return new ConcreteProductA2();
         }
 
-        public override AbstractProductB GetProductB()
+        public override AbstractProductB MakeProductB()
         {
             return new ConcreteProductB2();
+        }
+
+        public override IProduct Make(string productType)
+        {
+            return productType switch
+            {
+                "AbstractProductA" => new ConcreteProductA2(),
+                "AbstractProductB" => new ConcreteProductB2(),
+                _ => throw new ArgumentException("Wrong product type", productType)
+            };
+        }
+
+        public override string[] GetAllProducts()
+        {
+            return new[] {"AbstractProductA", "AbstractProductB"};
         }
     }
 }

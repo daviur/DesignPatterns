@@ -1,24 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="DesignPatterns.Creational.Prototype.Client" Collapsed="true">
-    <Position X="4.5" Y="3" Width="1.5" />
+  <Class Name="DesignPatterns.Creational.Prototype.Application" Collapsed="true">
+    <Position X="3.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
-      <FileName>Creational\Prototype\Client.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Creational\Prototype\Application.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConcreteProduct" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="DesignPatterns.Creational.Prototype.ConcretePrototype1" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8" Y="4" Width="1.75" />
+  <Class Name="DesignPatterns.Creational.Prototype.ConcreteProduct" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>EAAEAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAAAAABA=</HashCode>
-      <FileName>Creational\Prototype\ConcretePrototype1.cs</FileName>
+      <HashCode>EAAEAAAAAAAAAAAAAAAAAAACAAAAIAAAAQAAAAAAABA=</HashCode>
+      <FileName>Creational\Prototype\ConcreteProduct.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="DesignPatterns.Creational.Prototype.IPrototype" Collapsed="true">
-    <Position X="8" Y="2.5" Width="1.5" />
+  <Interface Name="DesignPatterns.Creational.Prototype.IPrototype&lt;T&gt;" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>Creational\Prototype\IPrototype.cs</FileName>
     </TypeIdentifier>
   </Interface>

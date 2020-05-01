@@ -1,11 +1,7 @@
-﻿using System;
-
-namespace DesignPatterns.Creational.Prototype
+﻿namespace DesignPatterns.Creational.Prototype
 {
-    public interface IPrototype
+    public interface IPrototype<out T>
     {
-        public void DoSomething();
-
-        public IPrototype Clone();
+        public T Clone();
     }
 }
