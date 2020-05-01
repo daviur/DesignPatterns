@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DesignPatterns.Creational.AbstractFactory.AbstractFactory">
+    <Position X="4.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\AbstractFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.AbstractProductA">
+    <Position X="10.5" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\AbstractProductA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.AbstractProductB">
+    <Position X="10.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\AbstractProductB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.ConcreteFactory1" Collapsed="true">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <AssociationLine Name="ConcreteProductA1" Type="DesignPatterns.Creational.AbstractFactory.ConcreteProductA1" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="5.191" />
+        <Point X="4" Y="8.278" />
+        <Point X="14.493" Y="8.278" />
+        <Point X="14.493" Y="3.625" />
+        <Point X="13.5" Y="3.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ConcreteProductB1" Type="DesignPatterns.Creational.AbstractFactory.ConcreteProductB1" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="5.191" />
+        <Point X="4" Y="8.278" />
+        <Point X="14.493" Y="8.278" />
+        <Point X="14.493" Y="7.096" />
+        <Point X="13.75" Y="7.096" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAkAA=</HashCode>
+      <FileName>Creational\AbstractFactory\ConcreteFactory1.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConcreteProductA1" />
+      <Property Name="ConcreteProductB1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.ConcreteFactory2" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <AssociationLine Name="ConcreteProductA2" Type="DesignPatterns.Creational.AbstractFactory.ConcreteProductA2" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="4.875" />
+        <Point X="7.749" Y="4.875" />
+        <Point X="7.749" Y="3.625" />
+        <Point X="9.25" Y="3.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ConcreteProductB2" Type="DesignPatterns.Creational.AbstractFactory.ConcreteProductB2" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="4.875" />
+        <Point X="7.749" Y="4.875" />
+        <Point X="7.749" Y="7.096" />
+        <Point X="9.25" Y="7.096" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEkAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\ConcreteFactory2.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConcreteProductA2" />
+      <Property Name="ConcreteProductB2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.ConcreteProductA1" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.75" />
+    <InheritanceLine Type="DesignPatterns.Creational.AbstractFactory.AbstractProductA" ManuallyRouted="true">
+      <Path>
+        <Point X="11.375" Y="2.603" />
+        <Point X="11.375" Y="2.9" />
+        <Point X="12.625" Y="2.9" />
+        <Point X="12.625" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\ConcreteProductA1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.ConcreteProductA2" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\ConcreteProductA2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.ConcreteProductB1" Collapsed="true">
+    <Position X="11.75" Y="6.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\ConcreteProductB1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.ConcreteProductB2" Collapsed="true">
+    <Position X="9.25" Y="6.75" Width="2" />
+    <InheritanceLine Type="DesignPatterns.Creational.AbstractFactory.AbstractProductB" ManuallyRouted="true">
+      <Path>
+        <Point X="11.5" Y="6.103" />
+        <Point X="11.5" Y="6.375" />
+        <Point X="10.25" Y="6.375" />
+        <Point X="10.25" Y="6.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\ConcreteProductB2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatterns.Creational.AbstractFactory.Client" Collapsed="true">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <AssociationLine Name="AbstractFactory" Type="DesignPatterns.Creational.AbstractFactory.AbstractFactory" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.812" Y="2.062" />
+        <Point X="2.812" Y="3" />
+        <Point X="4.5" Y="3" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAADAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\AbstractFactory\Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AbstractProductA" />
+      <Property Name="AbstractFactory" />
+      <Property Name="AbstractProductB" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
