@@ -8,5 +8,10 @@ namespace DesignPatterns.Creational.AbstractFactory
         {
             Console.WriteLine("ConcreteProductA1 does something");
         }
+
+        public override string ToString()
+        {
+            return $"{nameof(ConcreteProductA1)}";
+        }
     }
 }

@@ -6,19 +6,19 @@ namespace DesignPatterns.Creational.Singleton
     public sealed class LazyThreadSafeSingleton
     {
         // Lazy initialization
-        private static readonly Lazy<LazyThreadSafeSingleton> instance =
+        private static readonly Lazy<LazyThreadSafeSingleton> Singleton =
             new Lazy<LazyThreadSafeSingleton>(() => new LazyThreadSafeSingleton());
 
         /* 
         Private constructor ensures that only way to
-        get instance is throught the GetInstance property.
+        get singleton is throught the Instance property.
         */
         private LazyThreadSafeSingleton()
         {
             Console.WriteLine("LazyThreadSafeSingleton created");
         }
 
-        // Public property used to return the one and only instance of the class
-        public static LazyThreadSafeSingleton Instance { get; } = instance.Value;
+        // Public property used to return the one and only singleton of the class
+        public static LazyThreadSafeSingleton Instance { get; } = Singleton.Value;
     }
 }

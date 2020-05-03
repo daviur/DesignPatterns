@@ -7,14 +7,14 @@ namespace DesignPatterns.Creational.Singleton
     {
         /* 
         Private constructor ensures that only way to
-        get instance is throught the GetInstance property.
+        get instance is through the Instance property.
         */
         private EagerThreadSafeSingleton()
         {
             Console.WriteLine("EagerThreadSafeSingleton created");
         }
 
-        // Public property used to return the one and only intance of the class
-        public static EagerThreadSafeSingleton GetInstance { get; } = new EagerThreadSafeSingleton();
+        // Public property used to return the one and only instance of the class
+        public static EagerThreadSafeSingleton Instance { get; } = new EagerThreadSafeSingleton();
     }
 }
