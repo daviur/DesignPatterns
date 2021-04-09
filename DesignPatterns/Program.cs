@@ -35,6 +35,15 @@ namespace DesignPatterns
 
             //Prototype
             new Creational.Prototype.Application().Run();
+
+            //Mediator
+            new Behavioral.Mediator.Application().Run();
+
+            //Bridge
+            new Behavioral.Bridge.Application().Run();
+
+            //Memento
+            new Behavioral.Memento.Application().Run();
         }
 
         private static void CreateLazyNonThreadSafeSingleton()
