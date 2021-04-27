@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MementoPattern
+namespace Memento
 {
     public class Originator
     {
@@ -9,7 +9,7 @@ namespace MementoPattern
         public Memento GetState()
         {
             Console.WriteLine($"Getting Originator State: {_state}");
-            return new() {State = _state};
+            return new Memento() {State = _state};
         }
 
         public void RestoreState(Memento memento)

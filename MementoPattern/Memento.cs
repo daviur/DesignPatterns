@@ -1,4 +1,4 @@
-﻿namespace MementoPattern
+﻿namespace Memento
 {
     public sealed class Memento
     {
